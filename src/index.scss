@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "styles/component/alert";
+@import "styles/component/button";
+@import "styles/component/error";
+@import "styles/component/input";
+
+@import "styles/layout/top-navigation";
+
+@import "react-big-calendar/lib/sass/styles";
+@import "styles/react-big-calendar";
+@import "styles/react-widget";
+
+/* common general styles */
+/* scroll */
+/* scroll width */
+::-webkit-scrollbar {
+  @apply w-[2px]
+}
+
+/* scroll track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-300;
+}
+
+/* scroll handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400;
+}
+
+/* scroll handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* autofill */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+
+
+
+

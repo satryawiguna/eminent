@@ -1,0 +1,11 @@
+.top-nav-wrapper {
+  @apply fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700;
+
+  .top-nav {
+    @apply px-3 py-3 lg:px-5 lg:pl-3;
+  }
+}
+
+.top-nav-wrapper-mobile {
+  @apply fixed w-full z-20 top-0 left-0 hidden lg:block;
+}

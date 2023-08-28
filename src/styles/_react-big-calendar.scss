@@ -1,0 +1,51 @@
+.rbc-btn-group {
+  @apply text-sm text-white;
+
+  .rbc-rtl & > button:first-child:not(:last-child) {
+    @apply rounded-sm;
+  }
+
+  .rbc-rtl & > button:last-child:not(:first-child) {
+    @apply rounded-sm;
+  }
+}
+
+.rbc-toolbar {
+  & button {
+    @apply text-white border-0 bg-primary-800;
+
+    &:active,
+    &.rbc-active {
+      @apply text-black;
+    }
+  }
+}
+
+.rbc-month-view {
+  @apply border-gray-300 dark:border-gray-500;
+}
+
+.rbc-month-row + .rbc-month-row {
+  @apply border-t border-gray-300 dark:border-gray-500;
+}
+
+.rbc-header {
+  @apply border-b border-gray-300 dark:border-gray-500;
+}
+
+.rbc-day-bg + .rbc-day-bg,
+.rbc-header + .rbc-header {
+  @apply border-l border-gray-300 dark:border-gray-500;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-300 dark:bg-gray-900;
+}
+
+.rbc-show-more, .rbc-show-more:hover, .rbc-show-more:focus {
+  @apply text-gray-500 dark:text-white bg-transparent;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  text-align: right;
+}

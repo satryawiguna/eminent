@@ -1,0 +1,16 @@
+{
+  "text.signin_to_your_account": "Signin to your account",
+  "label.email": "Email",
+  "label.remember_me": "Remember Me",
+  "label.password": "Password",
+  "label.forgot_password": "Forgot password",
+  "label.sign_in": "Sign in",
+  "menu.notification": "Notification",
+  "menu.dashboard": "Dashboard",
+  "menu.event": "Events",
+  "menu.report": "Report",
+  "menu.edit_profile": "Edit Profile",
+  "menu.category": "Category",
+  "menu.log_out": "Logout",
+  "menu.user": "User"
+}

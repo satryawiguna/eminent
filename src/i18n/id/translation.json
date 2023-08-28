@@ -1,0 +1,16 @@
+{
+  "text.signin_to_your_account": "Masuk kedalam akun anda",
+  "label.email": "Email",
+  "label.remember_me": "Ingatkan Saya",
+  "label.password": "Kata Sandi",
+  "label.forgot_password": "Lupa kata sandi",
+  "label.sign_in": "Masuk",
+  "menu.notification": "Notifikasi",
+  "menu.dashboard": "Beranda",
+  "menu.event": "Acara",
+  "menu.report": "Laporan",
+  "menu.edit_profile": "Sunting Profil",
+  "menu.category": "Kategori",
+  "menu.log_out": "Keluar",
+  "menu.user": "Pengguna"
+}

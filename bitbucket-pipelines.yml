@@ -1,0 +1,52 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
+
+pipelines:
+  branches:
+    'develop':
+    - step:
+        name: Build Dev App
+        caches:
+          - node
+        script:
+          - echo "Dev branch build pipeline"
+          - npm install
+          - npm run
+    - step:
+        name: Build Dev Artifact
+        script:
+          - echo "Build Dev branch artifacts"
+          - git archive --format=tar.gz develop -o master-app-dev.tar.gz
+        artifacts:
+          - master-app-dev.tar.gz
+    - step:
+        name: Deploy Dev to Heroku Dev
+        deployment: develop
+        caches:
+          - node
+        script:
+          - echo "Deploy Artifact to Heroku Dev"
+          - pipe: atlassian/heroku-deploy:2.1.0
+            variables:
+              HEROKU_API_KEY: $HEROKU_API_KEY
+              HEROKU_APP_NAME: $HEROKU_APP_NAME
+              ZIP_FILE: "master-app-dev.tar.gz"
+              WAIT: 'true'
+    'qa':
+    - step:
+        name: Build QA App
+        caches:
+          - node
+        script:
+          - echo "QA branch build pipeline"
+    'production':
+    - step:
+        name: Build Production App
+        caches:
+          - node
+        script:
+          - echo "Production branch build pipeline"

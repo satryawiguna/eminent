@@ -1,0 +1,189 @@
+/* dropdown list with half rounded */
+.name-title.rw-dropdown-list.rw-widget {
+  .rw-widget-input {
+    @apply rounded-none
+    rounded-l-lg
+    py-2.5
+
+    font-medium
+    text-sm
+    text-gray-500
+
+    bg-white
+
+    border
+    border-gray-300
+
+    focus:ring-4
+    focus:outline-none
+    focus:ring-gray-100
+
+    dark:bg-gray-700
+    dark:hover:bg-gray-600
+    dark:focus:ring-gray-700
+    dark:text-white
+    dark:border-gray-600;
+  }
+}
+
+/* dropdown list */
+.rw-dropdown-list.rw-widget {
+  .rw-widget-input {
+    @apply rounded-lg
+    py-2.5
+
+    font-medium
+    text-sm
+    text-gray-500
+
+    bg-white
+
+    border
+    border-gray-300
+
+    focus:ring-4
+    focus:outline-none
+    focus:ring-gray-100
+
+    dark:bg-gray-700
+    dark:hover:bg-gray-600
+    dark:focus:ring-gray-700
+    dark:text-white
+    dark:border-gray-600;
+
+    .rw-list-option.rw-state-selected {
+      @apply bg-black;
+    }
+  }
+
+  .rw-popup-container {
+    @apply mt-1;
+
+    .rw-slide-transition.rw-popup {
+      @apply bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600;
+
+      .rw-list-option:hover {
+        @apply dark:bg-gray-900 dark:border-gray-800;
+      }
+    }
+  }
+}
+
+/* combobox */
+.rw-combobox.rw-widget {
+  .rw-widget-picker {
+    @apply rounded-lg
+    py-2.5
+
+    font-medium
+    text-sm
+    text-gray-500
+
+    dark:text-white
+
+    bg-white
+
+    border
+    border-gray-300
+
+    focus:ring-4
+    focus:outline-none
+    focus:ring-gray-100
+
+    dark:bg-gray-700
+    dark:hover:bg-gray-600
+    dark:focus:ring-gray-700
+    dark:text-white
+    dark:border-gray-600;
+  }
+
+  .rw-picker-btn:hover {
+    @apply bg-transparent;
+  }
+
+  .rw-combobox-input.rw-input {
+    @apply focus:ring-0 focus:border-0;
+  }
+
+  .rw-combobox-input.rw-widget-input.rw-input {
+    @apply dark:text-white;
+  }
+
+  .rw-popup-container {
+    @apply mt-1;
+
+    .rw-slide-transition.rw-popup {
+      @apply bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600;
+
+      .rw-list-option:hover {
+        @apply dark:bg-gray-900 dark:border-gray-800;
+      }
+    }
+
+    .rw-list-option.rw-state-focus {
+      @apply dark:bg-gray-900 dark:border-gray-900;
+    }
+  }
+}
+
+/* datepicker */
+.rw-date-picker.rw-widget {
+  .rw-widget-picker {
+    @apply rounded-lg
+    py-2.5
+
+    font-medium
+    text-sm
+    text-gray-500
+
+    dark:text-white
+
+    bg-white
+
+    border
+    border-gray-300
+
+    focus:ring-4
+    focus:outline-none
+    focus:ring-gray-100
+
+    dark:bg-gray-700
+    dark:hover:bg-gray-600
+    dark:focus:ring-gray-700
+    dark:text-white
+    dark:border-gray-600;
+  }
+
+  .rw-widget-input.rw-input {
+    @apply bg-transparent dark:text-white focus:ring-0 focus:border-0;
+  }
+
+  .rw-input-addon.rw-picker-btn.rw-btn {
+    @apply bg-transparent;
+  }
+
+  .rw-popup-container {
+    @apply mt-1;
+
+    .rw-slide-transition.rw-popup {
+      @apply dark:border-gray-600 dark:bg-gray-800 dark:text-white;
+
+      .rw-btn {
+        @apply dark:hover:text-black;
+      }
+
+      .rw-calendar-grid {
+        @apply dark:bg-gray-600;
+
+        .rw-cell {
+          @apply dark:hover:text-black;
+        }
+      }
+    }
+  }
+}
+
+.rw-state-focus .rw-widget-picker {
+  --rw-core-focus-width: 1.5px;
+  --rw-core-focus-color: #1a56db;
+}

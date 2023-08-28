@@ -1,0 +1,59 @@
+.alert-info {
+  @apply flex p-4 mb-4 text-blue-800 border-t-4 border-blue-300 bg-blue-50 dark:text-blue-400 dark:bg-gray-800 dark:border-blue-800 w-full;
+
+  .icon {
+    @apply flex-shrink-0 w-6 h-6;
+  }
+
+  .dismissing {
+    @apply ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700;
+  }
+}
+
+.alert-danger {
+  @apply flex p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800 w-full;
+
+  .icon {
+    @apply flex-shrink-0 w-6 h-6 mr-3;
+  }
+
+  .dismissing {
+    @apply ml-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700;
+  }
+}
+
+.alert-success {
+  @apply flex p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 w-full;
+
+  .icon {
+    @apply flex-shrink-0 w-6 h-6;
+  }
+
+  .dismissing {
+    @apply ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700;
+  }
+}
+
+.alert-warning {
+  @apply flex p-4 mb-4 text-yellow-800 border-t-4 border-yellow-300 bg-yellow-50 dark:text-yellow-300 dark:bg-gray-800 dark:border-yellow-800 w-full;
+
+  .icon {
+    @apply flex-shrink-0 w-6 h-6;
+  }
+
+  .dismissing {
+    @apply ml-auto -mx-1.5 -my-1.5 bg-yellow-50 text-yellow-500 rounded-lg focus:ring-2 focus:ring-yellow-400 p-1.5 hover:bg-yellow-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-yellow-300 dark:hover:bg-gray-700;
+  }
+}
+
+.alert-dark {
+  @apply flex p-4 border-t-4 border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-600 w-full;
+
+  .icon {
+    @apply flex-shrink-0 w-6 h-6;
+  }
+
+  .dismissing {
+    @apply ml-auto -mx-1.5 -my-1.5 bg-gray-50 text-gray-500 rounded-lg focus:ring-2 focus:ring-gray-400 p-1.5 hover:bg-gray-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white;
+  }
+}

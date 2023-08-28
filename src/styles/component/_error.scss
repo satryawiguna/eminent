@@ -1,0 +1,8 @@
+.error-text {
+  @apply text-red-800 dark:text-red-400 text-sm mt-1;
+
+  div {
+    @apply px-1;
+  }
+}
+
